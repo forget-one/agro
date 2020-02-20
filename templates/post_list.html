@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for post in post_list %}
+<header class="news-page news_profile_page">
+			<div class="news-page-block">
+				<div class="news-page-prof">
+					<img data-src="{% if post.image %} {{ post.image.url }} {% else %} https://rozetked.me/images/uploads/dwoilp3BVjlE.jpg {% endif %}" alt="">
+					<div class="text-wrap-news">
+						<div class="news-page__title">
+							{{ post.title }}
+						</div>
+						<div class="sto__sub">
+							{{ post.content|safe|truncatechars:100 }}
+						</div>
+						<a href="{{ post.get_absolute_url }}">
+							<div class="more-btn">
+								Більше
+							</div>
+						</a>
+					</div>
+				</div>
+</header>
+{% endfor %}
+{% endblock  %}
+
+
+
+
+
+
+
+
+

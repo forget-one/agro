@@ -1,0 +1,151 @@
+.news {
+    padding-bottom: 100px;
+    .green__link {
+        margin-top: 40px;
+        justify-content: flex-end;
+    }
+}
+.news-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.news-text {
+    width: 80%;
+}
+.img-news-wrap {
+    transition: transform .2s;
+}
+.news-prof {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    min-width: 300px;
+    align-items: center;
+    width: 29%;
+    min-height: 454px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-right: 40px;
+    border: 2px solid transparent;
+    transition: border .2s;
+    overflow: hidden;
+    img {
+        transition: transform .3s;
+    }
+    &:hover {
+        border: 2px solid #56595c;
+
+      
+            img {
+                transform: scale(1.24);
+            }
+        .img-news-wrap {
+            transform:  translateY(-35px);
+        }
+       
+    }
+}
+.news__title {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.news__sub {
+    font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+.green-form-text {
+   
+    max-width: 604px;
+    font-size: 35px;
+   font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.49;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #04b950;
+}
+.last-form {
+    margin-top: 80px;
+    padding: 51px 75px;
+    width: 100%;
+    background-color: #fff;
+}
+.last-input-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    input {
+        padding: 18px;
+        margin-top: 15px;
+       
+        width: 270px;
+        height: 60px;
+        border-radius: 3px;
+        border: solid 1px #eaeaea;
+        color: #0a1c2c;
+        margin-right: 20px;
+    }
+    .form-last-btn {
+        width: 202px;
+        padding: 0;
+        height: 60px;
+        border-radius: 3px;
+        box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.15);
+        font-size: 21px;
+        background-color: #00963f;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.9;
+        letter-spacing: normal;
+        color: #fff;
+    }
+}
+@media (max-width: 1264px) {
+    
+}
+@media (max-width: 1199px) {
+    .news-text {
+        width: 100%;
+    }
+}
+@media (max-width: 740px) {
+    .green-form-text {
+        
+        font-size: 23px;
+    }
+}
+@media (max-width: 537px) {
+    .green-form-text {
+        
+        font-size: 18px;
+    }
+    .last-form {
+        margin-top: 80px;
+        padding: 30px 25px;
+    }
+}
+@media (max-width: 429px) {
+    .news-prof {
+        margin-right: 0;
+        min-width: 267px;
+        width: 25%;
+    }
+}

@@ -1,0 +1,121 @@
+.header__contacts {
+    padding-top: 200px;
+
+
+    .form-sto {
+        background-color: #fff;
+    }
+
+    .input-sto-wrap {
+        margin-left: 0;
+    }
+
+    .form-wrap {
+        margin-top: 80px;
+        justify-content: flex-start;
+    }
+    .form-abs2 {
+        position: absolute;
+        top: 152px;
+      
+        right: -365px;
+    }
+}
+.contacts-top {
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-block {
+    .sto__sub {
+       
+        width: 60%;
+        margin-left: 40px;
+    }
+}
+.contacts-text {
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.721);
+}
+.contacts-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contacts__link {
+    width: 23%;
+    margin-top: 35px;
+    min-width: 245px;
+    min-height: 80px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: #4c5054;
+    padding: 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+
+    img {
+     margin-bottom: 10px;   
+    }
+}
+@media (max-width:1263px) {
+    .contacts-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1262px) {
+    .header__contacts .form-abs2 {
+    
+        top: 176px;
+      
+        right: -61px;
+        width: 37%;
+    }
+}
+@media (max-width: 1015px) {
+    .header__contacts {
+        .input-sto-wrap {
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 797px) {
+    .header__contacts .form-abs2 {
+        display: none;
+    }
+}
+@media (max-width: 694px) {
+    .contacts-top {
+        flex-direction: column;
+    }
+    .header__contacts {
+        .about__title {
+            font-size: 40px;
+        }  
+    }
+  
+    
+    .contacts-block .sto__sub {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .header__contacts {
+        padding-top: 120px;
+    }
+    .about__title {
+        margin-bottom: 29px;
+    }
+}
+

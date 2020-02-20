@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% block content %}
+    <header class="vakancies">
+        <div class="container">
+			<div class="vakan-top-block">
+				<div class="vakan__title">
+					Вакансія
+				</div>
+				<div class="vakan__name-block">
+					<div class="vakan__name">
+						{{ vacancy.title}}
+					</div>
+					<div class="vakan-contact-block">
+						<div class="vakan-contact-prof">
+							<div class="contact-user-wrap">
+								<img src="/static/img/sto/users.svg" alt="">
+								<div class="contact-user">
+									Контактна особа
+								</div>
+							</div>
+							<div class="contact-user__sub">
+								{{ vacancy.name}}
+							</div>
+						</div>
+						<div class="vakan-contact-prof">
+							<div class="contact-user-wrap">
+								<img src="/static/img/index/map-pin.svg" alt="">
+								<div class="contact-user">
+									Адреса
+								</div>
+							</div>
+							<div class="contact-user__sub">
+								{{ vacancy.adress}}
+							</div>
+						</div>
+						<div class="vakan-contact-prof">
+							<div class="contact-user-wrap">
+								<img src="/static/img/index/phone.svg" alt="">
+								<div class="contact-user">
+									Телефон
+								</div>
+							</div>
+							<a href="tel:+30981231223" class="contact-user__sub">
+								{{ vacancy.phone}}
+							</a>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="vakan-bottom-wrap">
+				<div class="vakan-bottom-left">
+					<form class="cmxform vakance" method="get" action="">
+					
+						
+							
+								<div class="inp-vak-wrap">
+									<label class="label__style" for="firstname">Ім’я (ПІП)</label class="label__style">
+									<input id="firstname" name="firstname" placeholder="Андрієнко Андій Андрійович" type="text">
+								</div>
+								<div class="inp-vak-wrap">
+									<label class="label__style" for="email">Email</label>
+									<input id="email" name="email" placeholder="clientmail@mail.com" type="email">
+								</div>
+								<div class="inp-vak-wrap">
+									<label class="label__style" for="number">Номер телефону</label>
+									<input id="number" name="number" placeholder="+3 8 096 123 45 67" type="phone">
+								</div>
+
+								<label class="label__style label__style-last" for="add__file_id">Ваше резюме</label>
+								
+								<div id="add__btn" class="add__file">
+									<div id="add__btn_a_id" class="add__btn_a">
+										<img src="/static/img/sto/exit.png" alt="">
+									</div>
+									<span class="file__name fill_old">
+										Прикріпити файл
+									</span>
+									<input type="file" id="add__file_id" name="add__file_id" accept="image/*">
+								</div>
+								
+								
+								
+							
+								
+								
+									<input class="submit_vak" type="submit" value="Надіслати">
+
+
+								
+				
+					</form>
+				</div>
+				<div class="vakan-bottom-right">
+					<div class="vakan-profile">
+						<div class="contact-user">
+							Вид зайнятості
+						</div>
+						<div class="contact-user__sub">
+							{{ vacancy.activity}}
+
+						</div>
+					</div>
+					<div class="vakan-profile">
+						<div class="contact-user">
+							Вимоги
+						</div>
+						<div class="contact-user__sub">
+							{{ vacancy.requirements}}
+
+
+						</div>
+					</div>
+					<div class="vakan-profile">
+						<div class="contact-user">
+							Опис ваканції
+						</div>
+						<div class="contact-user__sub">
+							{{ vacancy.requirements}}
+
+						</div>
+					</div>
+					<div class="vakan-profile">
+						
+						<div class="contact-user__sub">
+ 							{{ vacancy.description}}
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<!-- /.container -->
+		
+    </header>
+{% endblock  %}

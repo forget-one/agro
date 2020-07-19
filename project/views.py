@@ -81,6 +81,6 @@ def get_vacancy(request):
 
 
 @csrf_exempt
-def get_slave(request):
+def get_subordinate(request):
 
     return JsonResponse({})

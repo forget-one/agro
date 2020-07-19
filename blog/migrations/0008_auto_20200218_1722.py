@@ -19,27 +19,27 @@ class Migration(migrations.Migration):
             preserve_default=False,
         ),
         migrations.AlterField(
-            model_name='slave',
+            model_name='subordinate',
             name='email',
             field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Email'),
         ),
         migrations.AlterField(
-            model_name='slave',
+            model_name='subordinate',
             name='file',
             field=models.FileField(blank=True, null=True, upload_to='', verbose_name='Файл'),
         ),
         migrations.AlterField(
-            model_name='slave',
+            model_name='subordinate',
             name='name',
             field=models.CharField(blank=True, max_length=150, null=True, verbose_name="Ім'я"),
         ),
         migrations.AlterField(
-            model_name='slave',
+            model_name='subordinate',
             name='phone',
             field=models.CharField(blank=True, max_length=50, null=True, verbose_name='Телефон'),
         ),
         migrations.AlterField(
-            model_name='slave',
+            model_name='subordinate',
             name='vacancy',
             field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='blog.Vacancy', verbose_name='Вакансія'),
         ),

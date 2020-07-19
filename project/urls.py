@@ -19,7 +19,7 @@ urlpatterns = [
     path('STO/', STO, name='STO'),
     path('get_vacancy/', get_vacancy, name='get_vacancy'),
     path('client/', client, name='client'),
-    path('get_slave/', get_slave, name='get_slave'),
+    path('get_subordinate/', get_subordinate, name='get_subordinate'),
 ]
 
 

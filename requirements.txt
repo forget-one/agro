@@ -41,7 +41,7 @@ packaging==19.2
 Pillow==6.2.1
 pluggy==0.13.1
 polib==1.1.0
-py==1.8.0
+py==1.10.0
 pyparsing==2.4.5
 pytest==5.3.2
 python-crontab==2.4.0
